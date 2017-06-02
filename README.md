@@ -2,7 +2,7 @@
 
 Algorithm Design
 
-English | 中文
+English | [中文](https://github.com/InnoFang/Quantify/blob/master/README_zh.md)
 
 # Description
 
