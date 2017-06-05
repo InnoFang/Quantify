@@ -7,11 +7,11 @@ import java.util.*;
 public class Main {
 
     private static final int MAXN = 50 + 5;
-    private static final int INF  = Integer.MAX_VALUE;
+    private static final int INF = Integer.MAX_VALUE;
 
-    private static int[]   arr          = new int[MAXN];       // 数列
-    private static int[]   sum          = new int[MAXN];       // 前缀和
-    private static int[][] dp           = new int[MAXN][MAXN]; // 保存每个自分块的最优情况
+    private static int[] arr = new int[MAXN];       // 数列
+    private static int[] prefixSum = new int[MAXN];       // 前缀和
+    private static int[][] dp = new int[MAXN][MAXN]; // 保存每个自分块的最优情况
     private static int[][] sumOfSquares = new int[MAXN][MAXN]; // 保存所有分块中数的差的平方的和
 
     private static Scanner in = new Scanner(new BufferedInputStream(System.in));
@@ -25,29 +25,64 @@ public class Main {
                 int count = in.nextInt();
                 int s = in.nextInt();
 
-                /* input number */
-                for (int j = 1; j <= count; j++) {
-                    arr[j] = in.nextInt();
-                }
+                /* 初始化数列 */
+                initArray(count);
 
-                /* sorting */
+                /* 将数列排序 */
                 Arrays.sort(arr);
+                /* 获得前缀和 */
+                initPrefixSum(count);
 
-                int sum = 0;
-                for (int j = 0; j < s; j++) {
+                /* 保存所有分块中数的差的平方的和 */
+                initSumOfSquares(count);
 
-                }
-                System.out.println(sum);
             }
         }
         in.close();
     }
 
-    public static void initialData(int[] args, int val) {
-        for (int i = 0; i < args.length; i++) {
-            args[i] = val;
+    private static void initArray(int count) {
+        /* input number */
+        for (int j = 1; j <= count; j++) {
+            arr[j] = in.nextInt();
         }
     }
+
+    private static void initPrefixSum(int count) {
+        /* initial */
+        for (int i = 0; i < prefixSum.length; i++) {
+            prefixSum[i] = 0;
+        }
+
+        for (int i = 1; i <= count; i++) {
+            prefixSum[i] = prefixSum[i - 1] + arr[i];
+        }
+    }
+
+    private static void initSumOfSquares(int count) {
+        /* initial */
+        for (int i = 1; i <= count; i++) {
+            for (int j = 1; j <= count; j++) {
+                sumOfSquares[i][j] = INF;
+            }
+        }
+
+        for (int i = 1; i <= count; i++) {
+            for (int j = i + 1; j <= count; j++) {
+                int aver = averageOf(i, j);
+                for (int k = i; k <= j ; k++) {
+                    sumOfSquares[i][j] += (arr[k] - aver) * (arr[k] - aver);
+                }
+            }
+        }
+    }
+
+    private static int averageOf(int from, int to) {
+        return (int) Math.floor(
+                (prefixSum[to] - prefixSum[from - 1]) * 1.0
+                        / (to - from + 1) + 0.5);
+    }
+
 
 }
 
@@ -65,19 +100,19 @@ public class Main {
     }
 
     public static int averageOf(List<Integer> list) {
-        double sum = 0;
+        double prefixSum = 0;
         for (int arg : list) {
-            sum += arg;
+            prefixSum += arg;
         }
-        return (int) Math.floor((sum / list.size()) + 0.5);
+        return (int) Math.floor((prefixSum / list.size()) + 0.5);
     }
 
     public static int sumOfSquares(List<Integer> list) {
-        int sum = 0;
+        int prefixSum = 0;
         for (int arg : list) {
-            sum += arg * arg;
+            prefixSum += arg * arg;
         }
-        return sum;
+        return prefixSum;
     }
 */
 /*

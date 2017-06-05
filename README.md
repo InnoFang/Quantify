@@ -37,3 +37,7 @@ Each test case will output the sum of the minimum squares generated when the giv
 0
 651
 ```
+
+# Code
+
+ + [_C++_](https://github.com/InnoFang/Quantify/blob/master/src/code/quantify.cpp)
