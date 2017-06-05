@@ -38,3 +38,8 @@
 0
 651
 ```
+
+
+# 代码
+
+ + [_C++_](https://github.com/InnoFang/Quantify/blob/master/src/code/quantify.cpp)
