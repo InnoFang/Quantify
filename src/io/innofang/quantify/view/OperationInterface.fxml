@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane
+        prefHeight="400.0"
+        prefWidth="600.0"
+        xmlns="http://javafx.com/javafx/8.0.112"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="io.innofang.quantify.view.OperationInterfaceController">
+   <children>
+      <SplitPane
+              dividerPositions="0.65618729096989965"
+              focusTraversable="true"
+              orientation="VERTICAL"
+              prefHeight="400.0"
+              prefWidth="600.0"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane
+                  minHeight="0.0"
+                  minWidth="0.0"
+                  prefHeight="100.0"
+                  prefWidth="160.0" />
+          <AnchorPane
+                  minHeight="0.0"
+                  minWidth="0.0"
+                  prefHeight="100.0"
+                  prefWidth="160.0">
+               <children>
+                  <Label
+                          fx:id="consoleLabel"
+                          prefHeight="195.0"
+                          prefWidth="598.0"
+                          text="Label"
+                          AnchorPane.bottomAnchor="20.0"
+                          AnchorPane.leftAnchor="20.0"
+                          AnchorPane.rightAnchor="20.0"
+                          AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
