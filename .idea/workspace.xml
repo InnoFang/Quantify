@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c3765a0-8fed-4548-9f25-d08eae7c22b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/widget/NumberField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/util/FileUtil.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/util/FileUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +25,8 @@
       <file leaf-file-name="RandomGenerate.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="16" column="81" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="81" />
+            <state relative-caret-position="217">
+              <caret line="21" column="105" lean-forward="false" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -33,11 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumberField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/widget/NumberField.java">
+      <file leaf-file-name="InputFromFileController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="368">
+              <caret line="92" column="5" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="92" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomGenerateController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,12 +57,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/util/FileUtil.java">
+      <file leaf-file-name="temp_file.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="352">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperationInterfaceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding>
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,10 +83,10 @@
       <file leaf-file-name="InputFromFile.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            <state relative-caret-position="249">
+              <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="108" />
               <folding>
-                <marker date="1496835477741" expanded="true" signature="1135:1148" ph="..." />
+                <marker date="1496836399905" expanded="true" signature="1161:1174" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,27 +95,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomGenerateController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java">
+      <file leaf-file-name="OperationInterface.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="640">
+              <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/application/MainApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -104,6 +118,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>random</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -125,16 +144,17 @@
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterfaceController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/MainApp.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/RadomGenerateController.java" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/application/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/widget/NumberSpinner.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/widget/NumberField.java" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" />
+        <option value="$PROJECT_DIR$/temp_file.txt" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml" />
       </list>
     </option>
   </component>
@@ -775,7 +795,7 @@
       <workItem from="1496658486975" duration="4825000" />
       <workItem from="1496753594506" duration="2159000" />
       <workItem from="1496818381133" duration="10872000" />
-      <workItem from="1496830503025" duration="5702000" />
+      <workItem from="1496830503025" duration="7842000" />
     </task>
     <task id="LOCAL-00001" summary="update question description">
       <created>1496556886648</created>
@@ -854,11 +874,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496827207667</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="create NumberTextField">
+      <created>1496836225242</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496836225242</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42501000" />
+    <option name="totallyTimeSpent" value="44641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -910,10 +937,20 @@
     <MESSAGE value="update README" />
     <MESSAGE value="create GUI" />
     <MESSAGE value="build base GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="build base GUI" />
+    <MESSAGE value="create NumberTextField" />
+    <option name="LAST_COMMIT_MESSAGE" value="create NumberTextField" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java</url>
+          <line>64</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -921,18 +958,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -987,8 +1012,8 @@
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1319,39 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="78" column="5" lean-forward="false" selection-start-line="71" selection-start-column="2" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_91/javafx-src.zip!/javafx/scene/control/TextField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1383,40 +1375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="16" column="81" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding>
-            <marker date="1496835477741" expanded="true" signature="1135:1148" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/widget/NumberField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1429,10 +1387,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/util/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="208">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="108" />
+          <folding>
+            <marker date="1496836399905" expanded="true" signature="1161:1174" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/InputFromFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="80" selection-start-column="3" selection-end-line="92" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="21" column="105" lean-forward="false" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/OperationInterfaceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

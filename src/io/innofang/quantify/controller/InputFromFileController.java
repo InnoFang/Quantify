@@ -51,16 +51,16 @@ public class InputFromFileController implements Initializable {
                 pathTextField.setText(file.getPath());
             }
         } else if (path.isFile() || path.isDirectory()) {*/
-            File file = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
+        File file = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
           /*  if (path.isFile())
                 fileChooser.setInitialFileName(path.getName());
             else
                 fileChooser.setInitialDirectory(path);*/
-            if (null != file) {
-                pathTextField.setText(file.getPath());
-                String content = FileUtil.getFileContent(file);
-                inputTextArea.setText(content);
-            }
+        if (null != file) {
+            pathTextField.setText(file.getPath());
+            String content = FileUtil.getFileContent(file);
+            inputTextArea.setText(content);
+        }
        /* } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("提示");
@@ -76,6 +76,20 @@ public class InputFromFileController implements Initializable {
         } else {
             inputTextArea.setEditable(false);
         }
+    }
+
+    @FXML
+    private void handleExecute() {
+        String content = inputTextArea.getText();
+        if ("".equals(content)) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("提示");
+            alert.setContentText("内容为空，无法执行");
+            alert.show();
+            return;
+        }
+        FileUtil.writeFileContent(content);
+
     }
 
 }

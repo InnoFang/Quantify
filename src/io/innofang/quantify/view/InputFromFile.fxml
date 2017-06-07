@@ -16,6 +16,6 @@
                   onAction="#handleEditable" text="编辑"/>
         <TextArea fx:id="inputTextArea" editable="false" layoutX="16.0" layoutY="90.0" prefHeight="210.0"
                   prefWidth="556.0"/>
-        <Button layoutX="594.0" layoutY="90.0" mnemonicParsing="false" text="执行"/>
+        <Button layoutX="594.0" layoutY="90.0" mnemonicParsing="false" text="执行" onAction="#handleExecute"/>
     </children>
 </AnchorPane>

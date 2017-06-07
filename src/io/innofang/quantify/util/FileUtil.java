@@ -7,7 +7,7 @@ import java.io.*;
  */
 public class FileUtil {
 
-    public static final String TEMP_FILE_NAME = "temp.txt";
+    public static final String TEMP_FILE_NAME = "temp_file.txt";
 
     public static String getFileContent(File file) {
         FileReader fr = null;
@@ -17,8 +17,8 @@ public class FileUtil {
             fr = new FileReader(file);
             br = new BufferedReader(fr);
             String line = null;
-            if ((line = br.readLine()) != null) {
-                sb.append(line);
+            while ((line = br.readLine()) != null) {
+                sb.append(line).append("\n");
             }
             return sb.toString();
         } catch (Exception e) {
@@ -31,19 +31,29 @@ public class FileUtil {
     }
 
 
-    public static void writeFileContent(String content) throws IOException {
+    public static void writeFileContent(String content) {
+        System.out.println(content);
         File file = new File(TEMP_FILE_NAME);
-        if (!file.exists()) {
-            file.createNewFile();
-        }
-        FileWriter fw = new FileWriter(file);
-        BufferedWriter bw = new BufferedWriter(fw);
-        bw.write(content);
-        bw.flush();
-        bw.close();
-        fw.close();
-    }
+        FileWriter fw = null;
+        BufferedWriter bw = null;
+        try {
+            if (!file.exists()) {
+                file.createNewFile();
+            }
 
+            fw = new FileWriter(file);
+            bw = new BufferedWriter(fw);
+            bw.write(content);
+            bw.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            closeQuietly(bw);
+            closeQuietly(fw);
+        }
+
+
+    }
 
 
     public static void closeQuietly(Closeable closeable) {

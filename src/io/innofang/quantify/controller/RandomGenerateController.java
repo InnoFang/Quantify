@@ -1,5 +1,6 @@
 package io.innofang.quantify.controller;
 
+import io.innofang.quantify.util.FileUtil;
 import io.innofang.quantify.widget.NumberField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 
 /**
@@ -24,6 +26,7 @@ public class RandomGenerateController implements Initializable {
     @FXML
     private CheckBox editableCheckBox;
 
+    private Random random = new Random();
     private int caseNumber = 1;
 
     @Override
@@ -60,6 +63,43 @@ public class RandomGenerateController implements Initializable {
     private void handleGenerateRandomNumber(ActionEvent event) {
         int cas = Integer.valueOf(caseNumberTextField.getText());
 
-        System.out.println();
+        StringBuilder sb = new StringBuilder();
+        sb.append(cas).append("\n");
+        for (int i = 0; i < cas; i++) {
+            int count = generateRandom(101);
+            sb.append(count).append(" ");
+
+            int s = generateRandom(11);
+            while (s > count) {
+                s = generateRandom(11);
+            }
+            sb.append(s).append("\n");
+
+            for (int j = 0; j < count; j++) {
+                sb.append(generateRandom(1000)).append(" ");
+            }
+            sb.append("\n");
+        }
+        inputTextArea.setText(sb.toString());
+        System.out.println(sb.toString());
+    }
+
+    private int generateRandom(int bound) {
+        int tmp = random.nextInt(bound);
+        if (tmp == 0) tmp++;
+        return tmp;
+    }
+
+    @FXML
+    private void handleExecute() {
+        String content = inputTextArea.getText();
+        if (!"".equals(content)) {
+            FileUtil.writeFileContent(content);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("提示");
+            alert.setContentText("内容为空，无法执行");
+            alert.show();
+        }
     }
 }

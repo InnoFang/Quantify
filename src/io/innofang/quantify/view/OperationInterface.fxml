@@ -1,38 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.innofang.quantify.controller.OperationInterfaceController">
-   <children>
-      <SplitPane dividerPositions="0.7061872909698997" focusTraversable="true" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-               <children>
-                  <TabPane prefHeight="257.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <tabs>
-                      <Tab closable="false" text="文件输入">
-                          <content>
-                              <fx:include fx:id="inputFromFile" source="InputFromFile.fxml"/>
-                          </content>
-                      </Tab>
-                      <Tab closable="false" text="随机生成">
-                          <content>
-                              <fx:include fx:id="randomGenerate" source="RandomGenerate.fxml"/>
-                          </content>
-                      </Tab>
-                    </tabs>
-                  </TabPane>
-               </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-               <children>
-                  <Label fx:id="consoleLabel" prefHeight="195.0" prefWidth="598.0" text="Label" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="io.innofang.quantify.controller.OperationInterfaceController">
+    <children>
+        <SplitPane dividerPositions="0.7061872909698997" focusTraversable="true" orientation="VERTICAL"
+                   prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TabPane prefHeight="257.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE"
+                                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                 AnchorPane.topAnchor="0.0">
+                            <tabs>
+                                <Tab closable="false" text="文件输入">
+                                    <content>
+                                        <fx:include fx:id="inputFromFile" source="InputFromFile.fxml"/>
+                                    </content>
+                                </Tab>
+                                <Tab closable="false" text="随机生成">
+                                    <content>
+                                        <fx:include fx:id="randomGenerate" source="RandomGenerate.fxml"/>
+                                    </content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane
+                        minHeight="0.0"
+                        minWidth="0.0"
+                        prefHeight="100.0"
+                        prefWidth="160.0">
+                    <children>
+                        <TextArea fx:id="consoleTextArea"
+                                  editable="false"
+                                  prefHeight="142.0"
+                                  prefWidth="698.0"
+                                  AnchorPane.bottomAnchor="0.0"
+                                  AnchorPane.leftAnchor="0.0"
+                                  AnchorPane.rightAnchor="0.0"
+                                  AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
 </AnchorPane>

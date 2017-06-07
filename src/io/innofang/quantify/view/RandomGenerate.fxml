@@ -7,14 +7,19 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.innofang.quantify.controller.RandomGenerateController">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="io.innofang.quantify.controller.RandomGenerateController">
     <children>
-        <Label layoutX="16.0" layoutY="20.0" text="样例个数" />
-        <NumberField fx:id="caseNumberTextField" layoutX="80.0" layoutY="15.0" prefWidth="150" text="1" />
-        <Button fx:id="generateRandomNumberButton" layoutX="250.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleGenerateRandomNumber" text="生成" />
-        <CheckBox fx:id="editableCheckBox" layoutX="16.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleEditable" text="编辑" />
-        <TextArea fx:id="inputTextArea" editable="false" layoutX="16.0" layoutY="90.0" prefHeight="210.0" prefWidth="556.0" />
-      <Button layoutX="594.0" layoutY="90.0" mnemonicParsing="false" text="执行" />
+        <Label layoutX="16.0" layoutY="20.0" text="样例个数"/>
+        <NumberField fx:id="caseNumberTextField" layoutX="80.0" layoutY="15.0" prefWidth="150" text="1"/>
+        <Button fx:id="generateRandomNumberButton" layoutX="250.0" layoutY="15.0" mnemonicParsing="false"
+                onAction="#handleGenerateRandomNumber" text="生成"/>
+        <CheckBox fx:id="editableCheckBox" layoutX="16.0" layoutY="60.0" mnemonicParsing="false"
+                  onAction="#handleEditable" text="编辑"/>
+        <TextArea fx:id="inputTextArea" editable="false" layoutX="16.0" layoutY="90.0" prefHeight="210.0"
+                  prefWidth="556.0"/>
+        <Button layoutX="594.0" layoutY="90.0" mnemonicParsing="false" text="执行" onAction="#handleExecute"/>
 
     </children>
 </AnchorPane>
