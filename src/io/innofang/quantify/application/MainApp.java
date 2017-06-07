@@ -1,21 +1,30 @@
-package io.innofang.quantify;/**
+package io.innofang.quantify.application;
+
+/**
  * Created by Inno Fang on 2017/6/6.
  */
 
-import io.innofang.quantify.view.OperationInterfaceController;
+import io.innofang.quantify.controller.OperationInterfaceController;
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import sun.applet.Main;
 
 import java.io.IOException;
 
 public class MainApp extends Application {
 
     private Stage primaryStage;
+
+    private static class SingletonHolder {
+        private static MainApp mainApp = new MainApp();
+    }
+
+    public static MainApp getInstance() {
+        return SingletonHolder.mainApp;
+    }
 
     public static void main(String[] args) {
         launch(args);
@@ -33,10 +42,10 @@ public class MainApp extends Application {
         try {
             // Load operation interface
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/OperationInterface.fxml"));
-            AnchorPane operationInterface = loader.load();
+            loader.setLocation(getClass().getResource("../view/OperationInterface.fxml"));
+            Parent root = loader.load();
 
-            Scene scene = new Scene(operationInterface);
+            Scene scene = new Scene(root);
             primaryStage.setScene(scene);
 
             OperationInterfaceController controller = loader.getController();
@@ -46,5 +55,9 @@ public class MainApp extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
     }
 }
