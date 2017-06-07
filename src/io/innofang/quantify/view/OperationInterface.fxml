@@ -28,6 +28,7 @@
                         prefWidth="160.0">
                     <children>
                         <TabPane
+                                fx:id="tabPane"
                                 prefHeight="257.0"
                                 prefWidth="598.0"
                                 tabClosingPolicy="UNAVAILABLE"
@@ -36,14 +37,14 @@
                                 AnchorPane.rightAnchor="0.0"
                                 AnchorPane.topAnchor="0.0">
                             <tabs>
-                                <Tab closable="false" text="文件输入">
+                                <Tab fx:id="inputFromFileTab" closable="false" text="文件输入">
                                     <content>
-                                        <fx:include source="InputFromFile.fxml"/>
+                                        <fx:include fx:id="inputFromFile" source="InputFromFile.fxml"/>
                                     </content>
                                 </Tab>
-                                <Tab closable="false" text="随机生成">
+                                <Tab fx:id="randomGenerateTab" closable="false" text="随机生成">
                                     <content>
-                                        <fx:include source="RandomGenerate.fxml"/>
+                                        <fx:include fx:id="randomGenerate" source="RandomGenerate.fxml"/>
                                     </content>
                                 </Tab>
                             </tabs>

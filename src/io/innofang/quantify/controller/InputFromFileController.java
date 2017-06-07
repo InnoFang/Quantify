@@ -33,7 +33,13 @@ public class InputFromFileController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        mainApp = MainApp.getInstance();
+
+    }
+
+    public void setMainApp(MainApp mainApp) {
+        if (this.mainApp == null) {
+            this.mainApp = mainApp;
+        }
     }
 
     @FXML

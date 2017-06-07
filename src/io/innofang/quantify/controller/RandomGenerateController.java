@@ -34,8 +34,6 @@ public class RandomGenerateController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        mainApp = MainApp.getInstance();
-
         caseNumberTextField.textProperty().addListener((observable, oldValue, newValue) -> {
                     try {
                         caseNumber = Integer.parseInt(newValue);
@@ -54,6 +52,11 @@ public class RandomGenerateController implements Initializable {
         );
     }
 
+    public void setMainApp(MainApp mainApp) {
+        if (this.mainApp == null) {
+            this.mainApp = mainApp;
+        }
+    }
 
     @FXML
     private void handleEditable() {
