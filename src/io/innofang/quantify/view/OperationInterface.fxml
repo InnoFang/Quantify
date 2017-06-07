@@ -6,28 +6,44 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.112"
+<AnchorPane prefHeight="500.0" prefWidth="700.0"
+            xmlns="http://javafx.com/javafx/8.0.112"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="io.innofang.quantify.controller.OperationInterfaceController">
     <children>
-        <SplitPane dividerPositions="0.7061872909698997" focusTraversable="true" orientation="VERTICAL"
-                   prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <SplitPane dividerPositions="0.7061872909698997"
+                   focusTraversable="true"
+                   orientation="VERTICAL"
+                   prefHeight="400.0"
+                   prefWidth="600.0"
+                   AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
             <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                <AnchorPane
+                        minHeight="0.0"
+                        minWidth="0.0"
+                        prefHeight="100.0"
+                        prefWidth="160.0">
                     <children>
-                        <TabPane prefHeight="257.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE"
-                                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                                 AnchorPane.topAnchor="0.0">
+                        <TabPane
+                                prefHeight="257.0"
+                                prefWidth="598.0"
+                                tabClosingPolicy="UNAVAILABLE"
+                                AnchorPane.bottomAnchor="0.0"
+                                AnchorPane.leftAnchor="0.0"
+                                AnchorPane.rightAnchor="0.0"
+                                AnchorPane.topAnchor="0.0">
                             <tabs>
                                 <Tab closable="false" text="文件输入">
                                     <content>
-                                        <fx:include fx:id="inputFromFile" source="InputFromFile.fxml"/>
+                                        <fx:include source="InputFromFile.fxml"/>
                                     </content>
                                 </Tab>
                                 <Tab closable="false" text="随机生成">
                                     <content>
-                                        <fx:include fx:id="randomGenerate" source="RandomGenerate.fxml"/>
+                                        <fx:include source="RandomGenerate.fxml"/>
                                     </content>
                                 </Tab>
                             </tabs>

@@ -1,11 +1,13 @@
 package io.innofang.quantify.controller;
 
+import io.innofang.quantify.application.MainApp;
 import io.innofang.quantify.util.FileUtil;
 import io.innofang.quantify.widget.NumberField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import sun.applet.Main;
 
 import java.net.URL;
 import java.util.Random;
@@ -15,7 +17,6 @@ import java.util.ResourceBundle;
  * Created by Inno Fang on 2017/6/7.
  */
 public class RandomGenerateController implements Initializable {
-
 
     @FXML
     private NumberField caseNumberTextField;
@@ -28,9 +29,13 @@ public class RandomGenerateController implements Initializable {
 
     private Random random = new Random();
     private int caseNumber = 1;
+    private MainApp mainApp;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        mainApp = MainApp.getInstance();
+
         caseNumberTextField.textProperty().addListener((observable, oldValue, newValue) -> {
                     try {
                         caseNumber = Integer.parseInt(newValue);
@@ -95,6 +100,7 @@ public class RandomGenerateController implements Initializable {
         String content = inputTextArea.getText();
         if (!"".equals(content)) {
             FileUtil.writeFileContent(content);
+            mainApp.execute();
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("提示");

@@ -32,4 +32,8 @@ public class OperationInterfaceController implements Initializable {
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
+
+    public void updateConsole(String info) {
+        consoleTextArea.setText(info);
+    }
 }

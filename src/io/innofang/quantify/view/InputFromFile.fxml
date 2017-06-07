@@ -6,16 +6,45 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.112"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.innofang.quantify.controller.InputFromFileController">
+<AnchorPane
+        prefHeight="500.0"
+        prefWidth="700.0"
+        xmlns="http://javafx.com/javafx/8.0.112"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="io.innofang.quantify.controller.InputFromFileController">
     <children>
-        <TextField fx:id="pathTextField" layoutX="16.0" layoutY="19.0" prefHeight="30.0" prefWidth="556.0"/>
-        <Button fx:id="findFileButton" layoutX="585.0" layoutY="19.0" mnemonicParsing="false"
-                onAction="#handleOpenFileChooser" text="查询文件"/>
-        <CheckBox fx:id="editableCheckBox" layoutX="16.0" layoutY="60.0" mnemonicParsing="false"
-                  onAction="#handleEditable" text="编辑"/>
-        <TextArea fx:id="inputTextArea" editable="false" layoutX="16.0" layoutY="90.0" prefHeight="210.0"
-                  prefWidth="556.0"/>
-        <Button layoutX="594.0" layoutY="90.0" mnemonicParsing="false" text="执行" onAction="#handleExecute"/>
+        <TextField
+                fx:id="pathTextField"
+                layoutX="16.0"
+                layoutY="19.0"
+                prefHeight="30.0"
+                prefWidth="556.0"/>
+        <Button
+                fx:id="findFileButton"
+                layoutX="585.0"
+                layoutY="19.0"
+                mnemonicParsing="false"
+                onAction="#handleOpenFileChooser"
+                text="查询文件"/>
+        <CheckBox
+                fx:id="editableCheckBox"
+                layoutX="16.0"
+                layoutY="60.0"
+                mnemonicParsing="false"
+                onAction="#handleEditable"
+                text="编辑"/>
+        <TextArea
+                fx:id="inputTextArea"
+                editable="false"
+                layoutX="16.0"
+                layoutY="90.0"
+                prefHeight="210.0"
+                prefWidth="556.0"/>
+        <Button
+                layoutX="594.0"
+                layoutY="90.0"
+                mnemonicParsing="false"
+                text="执行"
+                onAction="#handleExecute"/>
     </children>
 </AnchorPane>

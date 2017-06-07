@@ -5,6 +5,7 @@ package io.innofang.quantify.application;
  */
 
 import io.innofang.quantify.controller.OperationInterfaceController;
+import io.innofang.quantify.model.Quantify;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,6 +18,7 @@ import java.io.IOException;
 public class MainApp extends Application {
 
     private Stage primaryStage;
+    private OperationInterfaceController controller;
 
     private static class SingletonHolder {
         private static MainApp mainApp = new MainApp();
@@ -27,13 +29,15 @@ public class MainApp extends Application {
     }
 
     public static void main(String[] args) {
+
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("Quantify");
+        this.primaryStage.setTitle("Quantify - Algorithm Design");
+
 
         showOperationInterface();
     }
@@ -48,7 +52,7 @@ public class MainApp extends Application {
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
 
-            OperationInterfaceController controller = loader.getController();
+            controller = loader.getController();
             controller.setMainApp(this);
 
             primaryStage.show();
@@ -59,5 +63,14 @@ public class MainApp extends Application {
 
     public Stage getPrimaryStage() {
         return primaryStage;
+    }
+
+    public void execute() {
+        String result = Quantify.quantify();
+        if (controller == null) {
+            System.out.println("controller is null");
+        } else {
+            controller.updateConsole(result);
+        }
     }
 }

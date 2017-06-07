@@ -38,35 +38,18 @@ public class InputFromFileController implements Initializable {
 
     @FXML
     private void handleOpenFileChooser() {
-
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(
                 "Quantify files (*.txt)", "*.txt");
         fileChooser.getExtensionFilters().add(extFilter);
 
-       /* File path = new File(pathTextField.getText());
-        if ("".equals(pathTextField.getText())) {
-            File file = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
-            if (null != file) {
-                pathTextField.setText(file.getPath());
-            }
-        } else if (path.isFile() || path.isDirectory()) {*/
         File file = fileChooser.showOpenDialog(mainApp.getPrimaryStage());
-          /*  if (path.isFile())
-                fileChooser.setInitialFileName(path.getName());
-            else
-                fileChooser.setInitialDirectory(path);*/
+
         if (null != file) {
             pathTextField.setText(file.getPath());
             String content = FileUtil.getFileContent(file);
             inputTextArea.setText(content);
         }
-       /* } else {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("提示");
-            alert.setContentText("路径错误");
-            alert.show();
-        }*/
     }
 
     @FXML
@@ -89,7 +72,7 @@ public class InputFromFileController implements Initializable {
             return;
         }
         FileUtil.writeFileContent(content);
-
+        mainApp.execute();
     }
 
 }
