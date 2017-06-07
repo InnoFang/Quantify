@@ -89,7 +89,6 @@ public class RandomGenerateController implements Initializable {
             sb.append("\n");
         }
         inputTextArea.setText(sb.toString());
-        System.out.println(sb.toString());
     }
 
     private int generateRandom(int bound) {

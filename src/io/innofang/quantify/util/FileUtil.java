@@ -32,7 +32,6 @@ public class FileUtil {
 
 
     public static void writeFileContent(String content) {
-        System.out.println(content);
         File file = new File(TEMP_FILE_NAME);
         FileWriter fw = null;
         BufferedWriter bw = null;

@@ -43,11 +43,23 @@ public class OperationInterfaceController implements Initializable {
 
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
+
         inputFromFileController.setMainApp(mainApp);
         randomGenerateController.setMainApp(mainApp);
+        tabPane.getSelectionModel()
+                .selectedItemProperty()
+                .addListener((ObservableValue<? extends Tab> observable,
+                              Tab oldValue, Tab newValue) -> {
+                    if (newValue == inputFromFileTab) {
+                        inputFromFileController.setMainApp(mainApp);
+                    } else if (newValue == randomGenerateTab) {
+                        randomGenerateController.setMainApp(mainApp);
+                    }
+                });
     }
 
     public void updateConsole(String info) {
+        consoleTextArea.clear();
         consoleTextArea.setText(info);
     }
 }

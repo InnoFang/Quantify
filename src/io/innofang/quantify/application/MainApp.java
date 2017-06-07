@@ -56,10 +56,6 @@ public class MainApp extends Application {
 
     public void execute() {
         String result = Quantify.quantify();
-        if (controller == null) {
-            System.out.println("controller is null");
-        } else {
-            controller.updateConsole(result);
-        }
+        controller.updateConsole(result);
     }
 }

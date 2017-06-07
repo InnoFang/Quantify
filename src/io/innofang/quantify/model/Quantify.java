@@ -24,17 +24,14 @@ public class Quantify {
     private static Scanner in;
     private static StringBuilder stringBuilder = new StringBuilder();
 
-    static {
+    public static String quantify() {
         try {
             in = new Scanner(new FileInputStream(new File(FileUtil.TEMP_FILE_NAME)));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-    }
 
-    public static String quantify() {
-
-        while (in.hasNextInt()) {
+        if (in.hasNextInt()) {
             int cas = in.nextInt();
             for (int i = 0; i < cas; i++) {
 
