@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.chart.BarChart?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="io.innofang.quantify.controller.QuantifyStatisticsController">
+    <children>
+        <BarChart fx:id="barChart" layoutX="69.0" layoutY="6.0" prefHeight="406.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+                         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT"/>
+            </yAxis>
+        </BarChart>
+    </children>
+</AnchorPane>
