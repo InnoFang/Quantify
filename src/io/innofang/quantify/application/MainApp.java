@@ -61,15 +61,15 @@ public class MainApp extends Application {
     }
 
     public void execute() {
-        String result = Quantify.quantify();
-        controller.updateConsole(result);
+        List<Data> datas = Quantify.quantify();
 
-        List<Data> datas = new ArrayList<>();
-        datas.add(new Data(new ArrayList<>(Arrays.asList(297, 450, 846, 292, 415, 252, 492, 474, 814, 934, 109)), Arrays.asList(207, 430, 845, 296, 417, 257, 482, 494, 810, 434, 139)));
-        datas.add(new Data(new ArrayList<>(Arrays.asList(973, 845, 141, 606, 944, 132, 678, 362, 562, 854, 398)), Arrays.asList(973, 845, 141, 606, 944, 132, 678, 362, 562, 854, 398)));
-        datas.add(new Data(new ArrayList<>(Arrays.asList(319, 855, 686, 44, 177, 193, 115, 8, 661, 773)), Arrays.asList(319, 855, 686, 44, 177, 193, 115, 8, 661, 773)));
-        datas.add(new Data(new ArrayList<>(Arrays.asList(179, 990, 351, 116, 873, 313, 470)), Arrays.asList(179, 990, 351, 116, 873, 313, 470)));
-        datas.add(new Data(new ArrayList<>(Arrays.asList(696, 446, 15, 15, 932, 709, 85, 357, 560)), Arrays.asList(696, 446, 15, 15, 932, 709, 85, 357, 560)));
+        StringBuilder consoleInfo = new StringBuilder();
+        for (Data data : datas) {
+            consoleInfo.append(data.getDescription());
+        }
+
+        controller.updateConsole(consoleInfo.toString());
+
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("../view/MultiTabsDialog.fxml"));

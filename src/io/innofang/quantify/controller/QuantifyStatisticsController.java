@@ -16,7 +16,7 @@ import java.util.*;
 /**
  * Created by Inno Fang on 2017/6/8.
  */
-public class QuantifyStatisticsController implements Initializable{
+public class QuantifyStatisticsController implements Initializable {
 
     @FXML
     private BarChart<String, Integer> barChart;
@@ -31,21 +31,24 @@ public class QuantifyStatisticsController implements Initializable{
 
     }
 
+    @SuppressWarnings("unchecked")
     public void setQuantifyData(Data data) {
 
         List<String> x = new ArrayList<>();
-        for (Integer integer : data.getBeforeData()) {
-            x.add(Integer.toString(integer));
+        for (int i = 1; i <= data.getBeforeData().size(); i++) {
+            x.add(i + "");
         }
         originData.addAll(x);
         xAxis.setCategories(originData);
-
-        XYChart.Series<String, Integer> series = new XYChart.Series<>();
+        barChart.setBarGap(2);
+        XYChart.Series<String, Integer> series1 = new XYChart.Series<>();
+        XYChart.Series<String, Integer> series2 = new XYChart.Series<>();
 
         for (int i = 0; i < x.size(); i++) {
-            series.getData().add(new XYChart.Data<>(x.get(i), data.getAfterData().get(i)));
+            series1.getData().add(new XYChart.Data<>(x.get(i), data.getBeforeData().get(i)));
+            series2.getData().add(new XYChart.Data<>(x.get(i), data.getAfterData().get(i)));
         }
 
-        barChart.getData().add(series);
+        barChart.getData().addAll(series1,series2);
     }
 }

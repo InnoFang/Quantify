@@ -32,7 +32,9 @@ public class MultiTabsDialogController implements Initializable {
 
         // add tabs
         for (int i = 1; i <= data.size(); i++) {
-            tabPane.getTabs().add(new Tab("case " + i));
+            Tab tab = new Tab("case " + i);
+            tab.setClosable(false);
+            tabPane.getTabs().add(tab);
         }
 
         // clear tabs
