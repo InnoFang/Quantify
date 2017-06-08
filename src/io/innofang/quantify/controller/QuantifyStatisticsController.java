@@ -7,7 +7,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
-import javafx.scene.chart.StackedBarChart;
 import javafx.scene.chart.XYChart;
 
 import java.net.URL;
@@ -40,15 +39,17 @@ public class QuantifyStatisticsController implements Initializable {
         }
         originData.addAll(x);
         xAxis.setCategories(originData);
-        barChart.setBarGap(2);
+        barChart.setBarGap(3);
         XYChart.Series<String, Integer> series1 = new XYChart.Series<>();
         XYChart.Series<String, Integer> series2 = new XYChart.Series<>();
+        XYChart.Series<String, Integer> series3 = new XYChart.Series<>();
 
         for (int i = 0; i < x.size(); i++) {
             series1.getData().add(new XYChart.Data<>(x.get(i), data.getBeforeData().get(i)));
             series2.getData().add(new XYChart.Data<>(x.get(i), data.getAfterData().get(i)));
+            series3.getData().add(new XYChart.Data<>(x.get(i), data.getDifferenceData().get(i)));
         }
 
-        barChart.getData().addAll(series1,series2);
+        barChart.getData().addAll(series1, series2, series3);
     }
 }

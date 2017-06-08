@@ -64,8 +64,8 @@ public class MainApp extends Application {
         List<Data> datas = Quantify.quantify();
 
         StringBuilder consoleInfo = new StringBuilder();
-        for (Data data : datas) {
-            consoleInfo.append(data.getDescription());
+        for (int i = 0; i < datas.size(); i++) {
+            consoleInfo.append(datas.get(i).getDescription());
         }
 
         controller.updateConsole(consoleInfo.toString());

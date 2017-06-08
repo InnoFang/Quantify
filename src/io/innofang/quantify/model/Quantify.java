@@ -23,10 +23,10 @@ public class Quantify {
     private static int[][] path; // 保存每个自分块的分界下标
 
     private static Scanner in;
-    private static StringBuilder stringBuilder;
     private static int caseNumber;
     private static int cas;
     private static List<Data> datas;
+    private static StringBuilder stringBuilder;
 
     public static List<Data> quantify() {
 
@@ -34,6 +34,7 @@ public class Quantify {
             in = new Scanner(new FileInputStream(new File(FileUtil.TEMP_FILE_NAME)));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            return null;
         }
 
         arr = new Bean[MAXN];
@@ -42,12 +43,14 @@ public class Quantify {
         average = new int[MAXN][MAXN];
         dp = new int[MAXN][10 + 5];
         path = new int[MAXN][10 + 5];
+
         datas = new ArrayList<>();
-        stringBuilder = new StringBuilder();
 
         if (in.hasNextInt()) {
             caseNumber = in.nextInt();
             for (int i = 0; i < caseNumber; i++) {
+
+                stringBuilder = new StringBuilder();
 
                 cas = i;
                 datas.add(new Data());
@@ -60,7 +63,7 @@ public class Quantify {
                 initArray(count);
 
                 /* 将数列排序 */
-                Arrays.sort(arr, 1, count + 1);
+                Arrays.sort(arr, 1, count + 1, (o1, o2) -> o1.before - o2.before);
 
                 /* 计算并保存前缀和 */
                 initPrefixSum(count);
@@ -187,7 +190,7 @@ public class Quantify {
             stringBuilder.append(dif).append(" ");
         }
         stringBuilder.append("\n");
-        datas.get(cas).setDiffereceData(diff);
+        datas.get(cas).setDifferenceData(diff);
 
 
         // 给 data 添加结果描述

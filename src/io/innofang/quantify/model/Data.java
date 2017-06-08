@@ -9,7 +9,7 @@ public class Data {
 
     private List<Integer> beforeData;
     private List<Integer> afterData;
-    private List<Integer> differeceData;
+    private List<Integer> differenceData;
     private String description = "";
 
     public Data() {
@@ -45,11 +45,11 @@ public class Data {
         this.description = description;
     }
 
-    public List<Integer> getDiffereceData() {
-        return differeceData;
+    public List<Integer> getDifferenceData() {
+        return differenceData;
     }
 
-    public void setDiffereceData(List<Integer> differeceData) {
-        this.differeceData = differeceData;
+    public void setDifferenceData(List<Integer> differenceData) {
+        this.differenceData = differenceData;
     }
 }
