@@ -13,23 +13,30 @@ import java.util.*;
  */
 public class Quantify {
 
-    private static final int MAXN = 50 + 5;
+    private static final int MAXN = 100 + 5;
     private static final int INF = 0x6ffffff;
 
-    private static int[] arr            = new int[MAXN];         // 数列
-    private static int[] prefixSum      = new int[MAXN];         // 前缀和
-    private static int[][] dp           = new int[MAXN][MAXN];   // 保存每个自分块的最优情况
-    private static int[][] sumOfSquares = new int[MAXN][10 + 5]; // 保存所有分块中数的差的平方的和
+    private static int[]   arr         ; // 数列
+    private static int[]   prefixSum   ; // 前缀和
+    private static int[][] dp          ; // 保存每个自分块的最优情况
+    private static int[][] sumOfSquares; // 保存所有分块中数的差的平方的和
 
     private static Scanner in;
-    private static StringBuilder stringBuilder = new StringBuilder();
+    private static StringBuilder stringBuilder;
 
     public static String quantify() {
+
         try {
             in = new Scanner(new FileInputStream(new File(FileUtil.TEMP_FILE_NAME)));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        arr          = new int[MAXN];
+        prefixSum    = new int[MAXN];
+        sumOfSquares = new int[MAXN][MAXN];
+        dp           = new int[MAXN][10 + 5];
+        stringBuilder = new StringBuilder();
 
         if (in.hasNextInt()) {
             int cas = in.nextInt();

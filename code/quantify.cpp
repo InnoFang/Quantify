@@ -3,8 +3,8 @@
 #include <math.h>
 #include <string.h>
 
-#define INF (0x7ffffff)
-#define MAXN (50 + 5)
+#define INF (0x6ffffff)
+#define MAXN (100 + 5)
 
 using namespace std;
 
