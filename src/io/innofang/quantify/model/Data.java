@@ -9,7 +9,7 @@ public class Data {
 
     private List<Integer> beforeData;
     private List<Integer> afterData;
-    private String description;
+    private String description = "";
 
     public Data() {
         this(null, null);

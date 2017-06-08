@@ -2,7 +2,6 @@ package io.innofang.quantify.model;
 
 import io.innofang.quantify.util.FileUtil;
 
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -23,6 +22,8 @@ public class Quantify {
 
     private static Scanner in;
     private static StringBuilder stringBuilder;
+    private static int caseNumber;
+    private static int cas;
 
     public static String quantify() {
 
@@ -39,8 +40,8 @@ public class Quantify {
         stringBuilder = new StringBuilder();
 
         if (in.hasNextInt()) {
-            int cas = in.nextInt();
-            for (int i = 0; i < cas; i++) {
+            caseNumber = in.nextInt();
+            for (int i = 0; i < caseNumber; i++) {
 
                 int count = in.nextInt();
                 int s = in.nextInt();
