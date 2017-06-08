@@ -1,5 +1,6 @@
 package io.innofang.quantify.model;
 
+import com.sun.javafx.binding.StringFormatter;
 import io.innofang.quantify.util.FileUtil;
 
 import java.io.File;
@@ -92,7 +93,7 @@ public class Quantify {
             arr[i].before = in.nextInt();
             arr[i].index = i;
             list.add(arr[i].before);
-            stringBuilder.append(arr[i].before).append(" ");
+            stringBuilder.append(format(arr[i].before)).append(" ");
         }
 
         datas.get(cas).setBeforeData(list);
@@ -175,7 +176,7 @@ public class Quantify {
         List<Integer> after = new ArrayList<>();
         for (int i = 1; i <= count; i++) {
             after.add(arr[i].after);
-            stringBuilder.append(arr[i].after).append(" ");
+            stringBuilder.append(format(arr[i].after)).append(" ");
 
         }
         stringBuilder.append("\n");
@@ -187,7 +188,7 @@ public class Quantify {
         for (int i = 1; i <= count; i++) {
             int dif = arr[i].before - arr[i].after;
             diff.add(dif);
-            stringBuilder.append(dif).append(" ");
+            stringBuilder.append(format(dif)).append(" ");
         }
         stringBuilder.append("\n");
         datas.get(cas).setDifferenceData(diff);
@@ -210,5 +211,9 @@ public class Quantify {
             }
             getPath(preIndex, s - 1);
         }
+    }
+
+    private static String format(int num) {
+        return StringFormatter.format("%-4d", num).getValue();
     }
 }
