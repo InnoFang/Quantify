@@ -45,7 +45,7 @@ Each test case will output the sum of the minimum squares generated when the giv
 
 # GUI
 
- [case1](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case1.png)
+ ![case1](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case1.png)
  &nbsp;
  &nbsp;
- [case2](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case2.png)
+ ![case2](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case2.png)
