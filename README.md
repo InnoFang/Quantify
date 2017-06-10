@@ -42,3 +42,10 @@ Each test case will output the sum of the minimum squares generated when the giv
 
  + [_C++_](https://github.com/InnoFang/Quantify/blob/master/code/quantify.cpp)
  + [_Java_](https://github.com/InnoFang/Quantify/blob/master/code/Quantify.java)
+
+# GUI
+
+ [case1](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case1.png)
+ &nbsp;
+ &nbsp;
+ [case2](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case2.png)
