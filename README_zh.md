@@ -52,3 +52,8 @@
  &nbsp;
  &nbsp;
  ![case2](https://raw.githubusercontent.com/InnoFang/Quantify/master/image/case2.png)
+ 
+
+# LICENSE
+
+ [Apache License 2.0](https://github.com/InnoFang/Quantify/blob/master/LICENSE)
