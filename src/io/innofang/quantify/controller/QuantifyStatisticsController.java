@@ -41,8 +41,11 @@ public class QuantifyStatisticsController implements Initializable {
         xAxis.setCategories(originData);
         barChart.setBarGap(3);
         XYChart.Series<String, Integer> series1 = new XYChart.Series<>();
+        series1.setName("量化前");
         XYChart.Series<String, Integer> series2 = new XYChart.Series<>();
+        series2.setName("量化后");
         XYChart.Series<String, Integer> series3 = new XYChart.Series<>();
+        series3.setName("差  值");
 
         for (int i = 0; i < x.size(); i++) {
             series1.getData().add(new XYChart.Data<>(x.get(i), data.getBeforeData().get(i)));

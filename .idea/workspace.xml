@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c3765a0-8fed-4548-9f25-d08eae7c22b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,12 +24,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Quantify.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Quantify.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="183" column="26" lean-forward="false" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
+            <state relative-caret-position="564">
+              <caret line="196" column="61" lean-forward="false" selection-start-line="196" selection-start-column="61" selection-end-line="196" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuantifyStatisticsController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,11 +101,11 @@
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/MultiTabsDialogController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/model/Bean.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/model/Data.java" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/application/MainApp.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" />
       </list>
     </option>
   </component>
@@ -127,6 +136,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -156,28 +167,6 @@
               <option name="myItemId" value="quantify" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quantify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quantify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quantify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -197,15 +186,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -705,7 +692,8 @@
       <workItem from="1496922419232" duration="625000" />
       <workItem from="1496932293858" duration="230000" />
       <workItem from="1497065973603" duration="310000" />
-      <workItem from="1497178405534" duration="272000" />
+      <workItem from="1497178405534" duration="301000" />
+      <workItem from="1497183452784" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="update question description">
       <created>1496556886648</created>
@@ -861,11 +849,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496918220420</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="optimization">
+      <created>1497178689020</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1497178689020</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69851000" />
+    <option name="totallyTimeSpent" value="70084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -886,7 +881,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23229614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23551503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -944,7 +939,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1376">
             <caret line="43" column="84" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="84" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -964,7 +958,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -977,7 +970,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -997,7 +989,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1010,7 +1001,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1030,7 +1020,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1043,7 +1032,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1063,7 +1051,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1076,7 +1063,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1103,7 +1089,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1116,7 +1101,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1164,7 +1148,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1376">
             <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="80" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1177,7 +1160,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="992">
             <caret line="31" column="3" lean-forward="false" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1243,13 +1225,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/QuantifyStatistics.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/Quantify.java">
@@ -1260,13 +1242,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/InputFromFile.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1504">
           <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://D:/Java/jdk1.8.0_91/src.zip!/java/util/Arrays.java">
@@ -1325,41 +1307,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1024">
           <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/RandomGenerate.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="53" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/view/MultiTabsDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java">
@@ -1373,14 +1348,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="183" column="26" lean-forward="false" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
+        <state relative-caret-position="564">
+          <caret line="196" column="61" lean-forward="false" selection-start-line="196" selection-start-column="61" selection-end-line="196" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
