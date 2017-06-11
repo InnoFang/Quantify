@@ -74,6 +74,9 @@ public class Quantify {
 
                 /* 使用动态规划 */
                 dynamicProgramming(count, s);
+
+                /* 分析并保存结果数据 */
+                saveResultData(count, s);
             }
         }
         in.close();
@@ -168,6 +171,21 @@ public class Quantify {
 
         // 递归求每一个数量化后的值
         getPath(tempIndex, s);
+    }
+
+    private static void getPath(int index, int s) {
+        if (s == 0) {
+            return;
+        } else {
+            int preIndex = path[index][s - 1];
+            for (int i = preIndex + 1; i <= index; i++) {
+                arr[i].after = average[preIndex + 1][index];
+            }
+            getPath(preIndex, s - 1);
+        }
+    }
+
+    private static void saveResultData(int count, int s) {
         // 以下标排序，还原到数列每个数原来的位置
         Arrays.sort(arr, 1, count + 1, (o1, o2) -> o1.index - o2.index);
 
@@ -199,18 +217,6 @@ public class Quantify {
         stringBuilder.append(dp[count][s]).append("\n\n");
 
         datas.get(cas).setDescription(stringBuilder.toString());
-    }
-
-    private static void getPath(int index, int s) {
-        if (s == 0) {
-            return;
-        } else {
-            int preIndex = path[index][s - 1];
-            for (int i = preIndex + 1; i <= index; i++) {
-                arr[i].after = average[preIndex + 1][index];
-            }
-            getPath(preIndex, s - 1);
-        }
     }
 
     private static String format(int num) {

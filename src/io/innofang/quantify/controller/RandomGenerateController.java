@@ -102,7 +102,7 @@ public class RandomGenerateController implements Initializable {
         String content = inputTextArea.getText();
         if (!"".equals(content)) {
             FileUtil.writeFileContent(content);
-            mainApp.execute();
+                mainApp.execute();
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("提示");
