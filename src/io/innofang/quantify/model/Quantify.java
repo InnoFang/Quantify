@@ -121,6 +121,11 @@ public class Quantify {
             }
         }
 
+        /* 自己自身的平均值就是自己 */
+        for (int i = 1; i <= count; i++) {
+            average[i][i] = arr[i].before;
+        }
+
         for (int i = 1; i < count; i++) {
             for (int j = i + 1; j <= count; j++) {
                 int aver = averageOf(i, j);

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c3765a0-8fed-4548-9f25-d08eae7c22b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" afterPath="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,21 +25,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Quantify.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Quantify.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="196" column="61" lean-forward="false" selection-start-line="196" selection-start-column="61" selection-end-line="196" selection-end-column="61" />
+            <state relative-caret-position="372">
+              <caret line="140" column="32" lean-forward="false" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuantifyStatisticsController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuantifyStatisticsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="-382">
+              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/application/MainApp.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/view/OperationInterface.fxml" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/RandomGenerateController.java" />
-        <option value="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" />
         <option value="$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java" />
+        <option value="$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java" />
       </list>
     </option>
   </component>
@@ -693,7 +693,7 @@
       <workItem from="1496932293858" duration="230000" />
       <workItem from="1497065973603" duration="310000" />
       <workItem from="1497178405534" duration="301000" />
-      <workItem from="1497183452784" duration="204000" />
+      <workItem from="1497183452784" duration="1517000" />
     </task>
     <task id="LOCAL-00001" summary="update question description">
       <created>1496556886648</created>
@@ -856,11 +856,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497178689020</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="optimization">
+      <created>1497183662201</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1497183662202</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70084000" />
+    <option name="totallyTimeSpent" value="71397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -939,6 +946,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1376">
             <caret line="43" column="84" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="84" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -958,6 +966,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -970,6 +979,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -989,6 +999,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1001,6 +1012,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1020,6 +1032,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1032,6 +1045,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1051,6 +1065,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1063,6 +1078,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1089,6 +1105,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="352">
             <caret line="11" column="89" lean-forward="false" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1101,6 +1118,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="384">
             <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1148,6 +1166,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1376">
             <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="80" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1160,6 +1179,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="992">
             <caret line="31" column="3" lean-forward="false" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -1351,18 +1371,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java">
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="196" column="61" lean-forward="false" selection-start-line="196" selection-start-column="61" selection-end-line="196" selection-end-column="61" />
+        <state relative-caret-position="-382">
+          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/controller/QuantifyStatisticsController.java">
+    <entry file="file://$PROJECT_DIR$/src/io/innofang/quantify/model/Quantify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="140" column="32" lean-forward="false" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
           <folding />
         </state>
       </provider>
